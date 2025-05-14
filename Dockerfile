@@ -1,7 +1,7 @@
 ARG K3S_TAG
 ARG CUDA_TAG
 
-FROM rancher/k3s:$K3S_TAG as k3s
+FROM rancher/k3s:$K3S_TAG AS k3s
 FROM nvcr.io/nvidia/cuda:$CUDA_TAG
 
 # Install the NVIDIA container toolkit
